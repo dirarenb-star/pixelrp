@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management team | Pixel RP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body{background:#0b0b0b;color:#eee;font-family:'Cairo',sans-serif;margin:0;padding:0;text-align:center;}
+    nav{background:rgba(20,20,20,0.9);padding:12px;display:flex;justify-content:center;flex-wrap:wrap;}
+    nav a{margin:5px 10px;padding:8px 16px;border-radius:8px;background:linear-gradient(45deg,#e2b15c,#ffdb88);color:#000;font-weight:700;transition:0.3s;text-decoration:none;}
+    nav a:hover{background:#fff;}
+    h1{color:#e2b15c;margin:30px 0;}
+    .section{margin:40px auto;max-width:1000px;}
+    .staff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;justify-items:center;}
+    .card{background:#111218;padding:20px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,0.5);transition:0.3s;}
+    .card img{width:120px;height:120px;border-radius:50%;object-fit:cover;}
+    .card p{margin-top:10px;}
+    .category{margin:60px 0;}
+    .category h2{color:#ffdb88;margin-bottom:20px;}
+/* نقاط بنفسجية متحركة في الخلفية */
+.purple-dots {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(155,89,182,0.4) 2px, transparent 3px);
+  background-size: 40px 40px;
+  animation: moveDots 6s linear infinite;
+  z-index: -1; /* يخليها ورا المحتوى */
+}
+
+@keyframes moveDots {
+  from { background-position: 0 0; }
+  to { background-position: 40px 40px; }
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="staff.html" class="active"><i class="fa-solid fa-user-shield"></i> Management team</a>
+  </nav>
+
+  <h1>Management team</h1>
+
+  <!-- Owners -->
+  <div class="category">
+    <h2>👑 owner</h2>
+    <div class="staff-grid">
+      <div class="card"><img src="images/owner2.png" alt=".astroytdz"><p>@.astroytdz</p></div>
+      <div class="card"><img src="images/owner2.png" alt="achouuur"><p>achouuur</p></div>
+    </div>
+  </div>
+
+
+  <!-- Designer -->
+  <div class="category">
+    <h2>🎨 designer</h2>
+    <div class="staff-grid">
+      <div class="card"><img src="images/designer.jpg" alt="alg.50"><p>alg.50</p></div>
+    </div>
+  </div>
+
+
+ <!-- Dev.Maper -->
+  <div class="category">
+    <h2>🎨 Dev . Maper </h2>
+    <div class="staff-grid">
+      <div class="card"><img src="images/admin5.png" alt="elbodi.dz"><p>elbodi.dz</p></div>
+      <div class="card"><img src="images/admin5.png" alt="midoffz"><p>midoffz</p></div>
+      <div class="card"><img src="images/admin5.png" alt="unkkonw"><p>unkkonw</p></div>
+    </div>
+  </div>
+
+
+  <!-- Admins -->
+  <div class="category">
+    <h2>🛡️ Management team</h2>
+    <div class="staff-grid">
+      <div class="card"><img src="images/admin.png"><p>iyad777572</p></div>
+      <div class="card"><img src="images/admin.png"><p>rahimrahim.1</p></div>
+      <div class="card"><img src="images/admin.png"><p>__1312</p></div>
+      <div class="card"><img src="images/admin.png"><p>alg.50</p></div>
+      <div class="card"><img src="images/admin.png"><p>houssam0222_95006</p></div>
+      <div class="card"><img src="images/admin.png"><p>_8jx</p></div>
+      <div class="card"><img src="images/admin.png"><p>_kinge_</p></div>
+      <div class="card"><img src="images/admin.png"><p>iam._.bu._.x2</p></div>
+      <div class="card"><img src="images/admin.png"><p>iyad777572</p></div>
+      <div class="card"><img src="images/admin.png"><p>meziane0573_12106</p></div>
+      <div class="card"><img src="images/admin.png"><p>v_064</p></div>
+    </div>
+  </div>
+
+</body>
+<!-- 🔔 Note -->
+<div id="note-bar">
+  ⚠️ هذه صفحة فيها كل شيئ يخص طاقم الادارة و قيد التحديث ان شاء الله وشكرا لكم جميعا على حسن ضنكم و القادم اعظم بأذن الله . وش كر خاص يذهب لطاقم الادارة ولكم ايضا يا اعظم لاعبين سرفر Pixel rp
+</div>
+
+<style>
+  #note-bar {
+    position: fixed;
+    bottom: -80px; /* مخفي في البداية */
+    left: 0;
+    right: 0;
+    background: #222;
+    color: #fff;
+    padding: 14px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
+    transition: bottom 0.6s ease;
+    z-index: 9999;
+  }
+  #note-bar.show {
+    bottom: 0; /* يظهر */
+  }
+</style>
+
+<script>
+  const noteBar = document.getElementById("note-bar");
+
+  function cycleNote() {
+    noteBar.classList.add("show");
+    setTimeout(() => {
+      noteBar.classList.remove("show");
+    }, 10000); // يبقى ظاهر ثانيتين
+  }
+
+  cycleNote(); // أول مرة
+  setInterval(cycleNote, 7000); // يكرر كل 4 ثواني
+</script>
+
+</html>
