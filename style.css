@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  background: #222;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: gold;
+}
+
+.staff-section {
+  padding: 20px;
+}
+
+.staff-category {
+  margin: 40px 0;
+}
+
+.staff-category h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.staff-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+}
+
+.staff-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.staff-card img.circle {
+  border-radius: 50%;
+}
+
+.staff-card p {
+  margin-top: 10px;
+}

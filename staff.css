@@ -1,0 +1,64 @@
+body {
+  font-family: "Tajawal", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  padding: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.staff-section {
+  margin: 40px 0;
+}
+
+.staff-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #000;
+}
+
+.staff-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.staff-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  width: 150px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: popUp 1s ease-in-out;
+}
+
+.staff-card:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.staff-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffcc00;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes popUp {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
