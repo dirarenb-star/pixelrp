@@ -170,54 +170,17 @@ section h2 {
     </p>
   </footer>
 
-  <!-- Particle background -->
+   <!-- Particle background -->
   <canvas id="bgCanvas"></canvas>
   <script>
-    const canvas = document.getElementById('bgCanvas');
-    const ctx = canvas.getContext('2d');
-    let w=canvas.width=window.innerWidth;
-    let h=canvas.height=window.innerHeight;
-    const particles = [];
-    for(let i=0;i<120;i++){
-      particles.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2+1,dx:(Math.random()-0.5)*0.3,dy:(Math.random()-0.5)*0.3});
-    }
-    function animate(){
-      ctx.clearRect(0,0,w,h);
-      for(let p of particles){
-        ctx.beginPath();
-        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-       ctx.fillStyle='#9b59b6';
-        ctx.globalAlpha=0.6;
-        ctx.fill();
-        p.x+=p.dx;
-        p.y+=p.dy;
-        if(p.x<0||p.x>w)p.dx*=-1;
-        if(p.y<0||p.y>h)p.dy*=-1;
-      }
-      requestAnimationFrame(animate);
-    }
-    animate();
-    window.addEventListener('resize',()=>{
-      w=canvas.width=window.innerWidth;
-      h=canvas.height=window.innerHeight;
-    });
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          e.target.classList.add('show');
-          observer.unobserve(e.target);
-        }
-      });
-    }, {threshold:0.2});
-    document.querySelectorAll('.card').forEach(card=>observer.observe(card));
+    // سكريبت الأنيميشن تاع الباكغراوند
   </script>
-</body>
 
   <!-- محتوى موقعك -->
   <h1>أهلاً في موقعي</h1>
   <p>هنا يظهر محتوى index.html الخاص بي...</p>
 
-  <!-- 🔔 كود التنبيه يوضع هنا -->
+  <!-- 🔔 كود التنبيه -->
   <div id="alert-bar">
     ⚠️ هذا الموقع قيد التحديث — شكر خاص لطاقم إدارة سيرفر <b>Pixel RP</b> وأصحابه ❤️ (MTA:SA)
   </div>
@@ -242,18 +205,15 @@ section h2 {
 
   <script>
     const alertBar = document.getElementById("alert-bar");
-
     function cycleAlert() {
       alertBar.classList.add("show");
       setTimeout(() => {
         alertBar.classList.remove("show");
       }, 10000);
     }
-
     cycleAlert();
     setInterval(cycleAlert, 7000);
   </script>
 
 </body>
-
 </html>
